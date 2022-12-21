@@ -8,9 +8,9 @@ import Main from './pages/Main/Main.jsx';
 function App() {
   return (
     <Switch>
-      <Route exact path='/' component={ Login } />
-      <Route path='/main' component={ Main } />
-      <Route exact path='album/:id' component={ Album }/>
+      <Route exact path='/' component={ () => <Login /> } />
+      <Route exact path='/main' component={ () => <Main /> } />
+      <Route exact path='/album/:id' component={ () => <Album /> }/>
     </Switch>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 
-function MusicCard() {
+function MusicCard(prop) {
+  const {trackId, prevUrl, trackName} = prop;
   return (
   <h1>MusicCard</h1>
   );

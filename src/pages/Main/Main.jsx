@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../../componentes/Header';
 import Loading from '../../componentes/Loading';
 import context from '../../context';
 import searchAlbumsAPI from '../../services/getAlbunsAPI';
@@ -27,7 +28,8 @@ function Main() {
 
   return (
     <>
-      <h2>Pesquisar</h2>
+      <Header />
+      <h2>Pesquisar Artista </h2>
       <input
       type="text"
       id='search'
@@ -46,8 +48,8 @@ function Main() {
         {isLoading && <Loading />}
         { valAPI === true 
           && (
-            artist.map((album) => (
-              <div key={ album.artistId }>
+            artist.map((album, index) => (
+              <div key={ index }>
                 <img src={ album.artworkUrl100} alt={ album.collectionName } />
                 <h3>{ album.collectionName }</h3>
                 <h4>{ album.artistName }</h4>
