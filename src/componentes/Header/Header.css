@@ -32,6 +32,10 @@
   margin: auto 10px;
 }
 
+.Navegation {
+  margin: 0 5px 0 0;
+  color: var(--primary-default);
+}
 .Config {
   width: 34px;
   margin: auto;
