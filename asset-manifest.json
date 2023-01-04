@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/nome-do-repositorio/static/css/main.c662685b.css",
-    "main.js": "/nome-do-repositorio/static/js/main.ea826a02.js",
-    "static/js/787.33c069aa.chunk.js": "/nome-do-repositorio/static/js/787.33c069aa.chunk.js",
-    "static/media/Cassette player-bro.png": "/nome-do-repositorio/static/media/Cassette player-bro.fb84864e82e8bb330bf9.png",
-    "index.html": "/nome-do-repositorio/index.html",
-    "main.c662685b.css.map": "/nome-do-repositorio/static/css/main.c662685b.css.map",
-    "main.ea826a02.js.map": "/nome-do-repositorio/static/js/main.ea826a02.js.map",
-    "787.33c069aa.chunk.js.map": "/nome-do-repositorio/static/js/787.33c069aa.chunk.js.map"
+    "main.css": "/App-de-Musica/static/css/main.c662685b.css",
+    "main.js": "/App-de-Musica/static/js/main.eda9b804.js",
+    "static/js/787.33c069aa.chunk.js": "/App-de-Musica/static/js/787.33c069aa.chunk.js",
+    "static/media/Cassette player-bro.png": "/App-de-Musica/static/media/Cassette player-bro.fb84864e82e8bb330bf9.png",
+    "index.html": "/App-de-Musica/index.html",
+    "main.c662685b.css.map": "/App-de-Musica/static/css/main.c662685b.css.map",
+    "main.eda9b804.js.map": "/App-de-Musica/static/js/main.eda9b804.js.map",
+    "787.33c069aa.chunk.js.map": "/App-de-Musica/static/js/787.33c069aa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c662685b.css",
-    "static/js/main.ea826a02.js"
+    "static/js/main.eda9b804.js"
   ]
 }
