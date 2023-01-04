@@ -73,7 +73,7 @@ $ npm run start
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 ```
 
-Ao iniciar a aplicação você irá se deparar com um a tela de Login. Nela foi construído uma verificação básica dos dados inseridos nos campode de Email e Senha. Então basta colocar um email qualquer e uma senha qualquer de no mínimo 6 digitos. 
+Ao iniciar a aplicação você irá se deparar com um a tela de Login. Nela foi construído uma verificação básica dos dados inseridos nos campo de Email e Senha. Então basta colocar um email qualquer e uma senha qualquer de no mínimo 6 digitos. 
 
 ---
 
