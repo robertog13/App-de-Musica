@@ -17,7 +17,7 @@ Tabela de conteúdos
    * [Tabela de Conteudo](#tabela-de-conteudo)
    * [🔧 Instalação](#instalacao)
    * [🖱 Como usar](#como-usar)
-      * [📖 Pre Requisitos](###Pré-requisitos)
+      * [📖 Pre Requisitos](#-pre-requisitos)
       * [🖥 Local files](#local-files)
       * [💾 Remote files](#remote-files)
       * [📼 Multiple files](#multiple-files)
