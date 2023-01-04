@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import url('https://fonts.cdnfonts.com/css/elektora');
+@import url('https://fonts.cdnfonts.com/css/aabbcc');
+
+:root {
+  --primary-default:#FFFC4D;
+  --primary-light: #FAF776;
+  --contrast: rgb(24, 24, 24);
+  --secundary-dark: #672FAD;
+  --secundary: #B175FA;
+  --light: rgb(255, 255, 227);
+
+  --primary-font: 'Elektora', sans-serif;
+  --secundary-font: 'AaBbCc', sans-serif;
+}

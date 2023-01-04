@@ -1,0 +1,38 @@
+.Header {
+  background-color: var(--contrast);
+  display: flex;
+  justify-content: space-between;
+  border-bottom-style: groove;
+  border-color: var(--primary-light);
+}
+
+.Logo {
+  width: 90px;
+  margin: 10px;
+  background-color: var(--primary-light);
+  border-radius: 100px;
+}
+
+.Header h1 {
+  margin: auto;
+  font-family: var(--primary-font);
+  color: var(--primary-light);
+  font-size: 250%
+}
+
+.PerfilInfo {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto 20px;
+  font-family: var(--secundary-font);
+  color: var(--primary-default);
+}
+
+.PerfilInfo p {
+  margin: auto 10px;
+}
+
+.Config {
+  width: 34px;
+  margin: auto;
+}

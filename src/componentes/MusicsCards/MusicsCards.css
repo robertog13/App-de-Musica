@@ -1,0 +1,10 @@
+.MusicsCards {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 200px;
+  border-bottom-style:solid ;
+  color: var(--light);
+  border-color: var(--contrast);
+  font-family: var(--secundary-font);
+  min-width: 700px;
+}

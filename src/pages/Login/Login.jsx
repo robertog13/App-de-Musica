@@ -1,6 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom';
 import context from '../../context';
+import "./Login.css";
+
+
 function Login() {
   const {username, setUsername, password, setPassword} = useContext(context)
   const [validLogin, setValidLogin] = useState(true);
@@ -22,8 +25,9 @@ function Login() {
   }
 
   return (
-    <>
-      <h1>Login</h1>
+    <div className='LoginPage'>
+      <h1>TryTunes</h1>
+      <h2>Login</h2>
       <label htmlFor="username">
         Usuário
         <input
@@ -51,7 +55,7 @@ function Login() {
       >
         Entrar
       </button>
-    </>
+    </div>
   );
 }
 

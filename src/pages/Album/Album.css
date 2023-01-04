@@ -1,0 +1,21 @@
+.Album {
+  background: rgb(32,32,32);
+  background: linear-gradient(0deg, rgba(32,32,32,1) 33%, rgba(103,47,173,1) 86%, rgba(177,117,250,1) 100%);
+}
+
+.AlbumInfo {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-default)
+}
+
+.AlbumInfo img {
+  width: 200px;
+  border-color: var(--secundary-dark);
+  border-style:outset;
+  
+}
+
+.Tittles {
+  margin:auto 10px
+}

@@ -1,1 +1,2 @@
-# App-de-Musica
+<h1 align="center">TryTunes</h1>
+

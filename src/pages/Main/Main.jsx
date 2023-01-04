@@ -1,9 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../../componentes/Header';
+import Header from '../../componentes/Header/Header';
 import Loading from '../../componentes/Loading';
 import context from '../../context';
 import searchAlbumsAPI from '../../services/getAlbunsAPI';
+import play from "../../images/play-icon.png"
+import art from "../../images/Cassette player-bro.png"
+import "./Main.css"
 
 function Main() {
   const { search, setSearch, artist, setArtist, isLoading, setIsLoading } = useContext(context)
@@ -24,44 +27,57 @@ function Main() {
     setIsLoading(false)
   }
 
-  console.log(isLoading);
+  console.log({artist});
 
   return (
-    <>
+    <div className='Main'>
       <Header />
       <h2>Pesquisar Artista </h2>
-      <input
-      type="text"
-      id='search'
-      name='search'
-      value={ search }
-      onChange={ (e) => setSearch(e.target.value) }
-      />
-      <button
-        type='button'
-        onClick={ onClickSearch }
-        disabled={ validSearch }
-      >
-        ir
-      </button>
-      <div>
+      <div className='Search'>
+        <input
+        type="text"
+        id='search'
+        name='search'
+        value={ search }
+        onChange={ (e) => setSearch(e.target.value) }
+        />
+        <button
+          type='button'
+          onClick={ onClickSearch }
+          disabled={ validSearch }
+          >
+          ir
+        </button>
+        </div>
+      <div className='Musicsbox'>
         {isLoading && <Loading />}
-        { valAPI === true 
-          && (
+        { valAPI === true ?
+         (
             artist.map((album, index) => (
-              <div key={ index }>
+              <div className='MusicsCards1' key={ index }>
+                <div className='InfoAlbum'>
                 <img src={ album.artworkUrl100} alt={ album.collectionName } />
-                <h3>{ album.collectionName }</h3>
-                <h4>{ album.artistName }</h4>
+                  <div className='Tittle'>
+                    <h3>{ album.collectionName }</h3>
+                    <h4>{ album.artistName }</h4>
+                  </div>
+                </div>
                 <Link
-                  to={`/album/${album.collectionId}`}
+                className='aaa'
+                to={`/album/${album.collectionId}`}
                 >
-                  Ver Album!
-                 </Link>
+                  <img className='PlayButton' src={ play } alt="Botão Play" />
+                </Link>
               </div>
-        )))}
+        )))
+        :
+        (
+          <div className='testeaaa'>
+            <img className="Art" src={ art } alt="Ilustração" />
+          </div>
+        )}
       </div>
-    </>
+    </div>
   );
 }
 

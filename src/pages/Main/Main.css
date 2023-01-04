@@ -1,0 +1,87 @@
+.Main {
+  background: rgb(32,32,32);
+  background: linear-gradient(0deg, rgba(32,32,32,1) 33%, rgba(103,47,173,1) 86%, rgba(177,117,250,1) 100%);
+}
+
+.Main h2 {
+  font-family: var(--primary-font);
+  color: var(--primary-default);
+  text-align: center;
+  font-size: 200%;
+}
+
+.Search {
+  display: flex;
+  justify-content: center;
+}
+
+.Search input {
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.Search button {
+  margin: 0 10px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border-style: solid;
+  border-block-end-width: 2px;
+  background-color: var(--contrast);
+  border-color: gray;
+  color: gray
+}
+
+.Search button:enabled {
+  color: var(--contrast);
+  background-color: var(--primary-default);
+  border-color: var(--primary-light);
+}
+
+.testeaaa {
+  display: flex;
+  justify-content: center;
+}
+
+.Art {
+  width: 50%;
+}
+
+ .Musicsbox {
+  margin: 50px 25px;
+ }
+
+ .MusicsCards1 {
+  background-color: var(--contrast);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5%;
+  margin:5px 50px;
+  font-family: var(--secundary-font);
+  color: var(--light);
+}
+
+.MusicsCards1 img {
+  clip-path: circle(50% at 50% 50%);
+  margin: auto 30px 0 5px;
+}
+
+.MusicsCards1 h4 {
+  margin-top: -5px;
+  font-size: small;
+}
+.aaa {
+  margin: auto 10px;
+}
+
+.aaa img {
+  background-color: var(--light);
+
+}
+
+.InfoAlbum {
+  display: flex;
+}
+
+.PlayButton {
+  width: 50px;
+}
