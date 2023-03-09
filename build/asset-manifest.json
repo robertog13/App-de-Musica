@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/App-de-Musica/static/css/main.f84dfb2b.css",
+    "main.js": "/App-de-Musica/static/js/main.c10aa87a.js",
+    "static/js/787.33c069aa.chunk.js": "/App-de-Musica/static/js/787.33c069aa.chunk.js",
+    "static/media/Cassette player-bro.png": "/App-de-Musica/static/media/Cassette player-bro.fb84864e82e8bb330bf9.png",
+    "static/media/404.svg": "/App-de-Musica/static/media/404.40fdd4dbe74e3b2b84c70cf43e783697.svg",
+    "index.html": "/App-de-Musica/index.html",
+    "main.f84dfb2b.css.map": "/App-de-Musica/static/css/main.f84dfb2b.css.map",
+    "main.c10aa87a.js.map": "/App-de-Musica/static/js/main.c10aa87a.js.map",
+    "787.33c069aa.chunk.js.map": "/App-de-Musica/static/js/787.33c069aa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f84dfb2b.css",
+    "static/js/main.c10aa87a.js"
+  ]
+}
