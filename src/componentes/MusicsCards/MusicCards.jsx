@@ -2,9 +2,12 @@ import React from 'react';
 import "./MusicsCards.css"
 
 function MusicCard(prop) {
-  const {/* trackId */previewUrl, trackName} = prop;
+  const { trackId ,previewUrl, trackName} = prop;
   return (
     <div className='MusicsCards'> 
+    
+      <input type="checkbox" name="like" id="like" />
+
       <p>{ trackName }</p>
       <audio src={ previewUrl } controls>
         <track kind='captions' />

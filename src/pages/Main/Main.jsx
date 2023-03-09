@@ -1,12 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../componentes/Header/Header';
-import Loading from '../../componentes/Loading';
+import Loading from '../../componentes/Loading/Loading';
 import context from '../../context';
 import searchAlbumsAPI from '../../services/getAlbunsAPI';
 import play from "../../images/play-icon.png"
 import art from "../../images/Cassette player-bro.png"
 import "./Main.css"
+import Footer from '../../componentes/Footer/Footer';
+import error from "../../images/404.svg"
 
 function Main() {
   const { search, setSearch, artist, setArtist, isLoading, setIsLoading } = useContext(context)
@@ -24,15 +26,12 @@ function Main() {
     setArtist(returnArtist)
     setValAPI(true)
     setSearch('')
-    setIsLoading(false)
   }
-
-  console.log({artist});
 
   return (
     <div className='Main'>
       <Header />
-      <h2>Pesquisar Artista </h2>
+      <h2>Pesquisar</h2>
       <div className='Search'>
         <input
         type="text"
@@ -46,37 +45,55 @@ function Main() {
           onClick={ onClickSearch }
           disabled={ validSearch }
           >
-          ir
+          Buscar
         </button>
         </div>
       <div className='Musicsbox'>
         {isLoading && <Loading />}
         { valAPI === true ?
          (
+          artist.length !== 0 ?
+          (
             artist.map((album, index) => (
               <div className='MusicsCards1' key={ index }>
                 <div className='InfoAlbum'>
-                <img src={ album.artworkUrl100} alt={ album.collectionName } />
+                  <img src={ album.artworkUrl100} alt={ album.collectionName } />
                   <div className='Tittle'>
                     <h3>{ album.collectionName }</h3>
                     <h4>{ album.artistName }</h4>
                   </div>
+                  <Link
+                  className='LinkAlbun'
+                  to={`/album/${album.collectionId}`}
+                  >
+                    <img className='PlayButton' src={ play } alt="Botão Play" />
+                  </Link>
                 </div>
-                <Link
-                className='aaa'
-                to={`/album/${album.collectionId}`}
-                >
-                  <img className='PlayButton' src={ play } alt="Botão Play" />
-                </Link>
               </div>
         )))
         :
         (
-          <div className='testeaaa'>
-            <img className="Art" src={ art } alt="Ilustração" />
+          <div className='CatError'>
+            <p>Seu Artista ou Banda não fi encontrado ;-;</p>
+            <img src={ error } alt="erro" />
           </div>
+        )
+          )
+        :
+        (
+          isLoading ? 
+          <Loading />
+          :
+          (
+            <div className='AwaitSearch'>
+              <img className="Art" src={ art } alt="Ilustração" />
+              <p>Esse site usa um banco de dados disponibilizado pelo Itunes. Pesquise por artistas ou albúns para ouvir uma prévia das suas músicas</p>
+            </div>
+          )
+
         )}
       </div>
+      <Footer/>
     </div>
   );
 }

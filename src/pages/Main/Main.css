@@ -37,51 +37,73 @@
   border-color: var(--primary-light);
 }
 
-.testeaaa {
+.AwaitSearch {
   display: flex;
   justify-content: center;
+  margin: auto 100px
+}
+
+.AwaitSearch p {
+  color: aliceblue;
+  font-family: var(--secundary-font);
+  width: 400px;
+  margin: auto 10px;
+  min-width: 150px;
+  font-size: 25px;
 }
 
 .Art {
-  width: 50%;
+  max-width: 600px;
+  width: 40%;
+  min-width: 400px;
 }
 
  .Musicsbox {
   margin: 50px 25px;
  }
 
- .MusicsCards1 {
-  background-color: var(--contrast);
-  display: flex;
-  justify-content: space-between;
-  border-radius: 5%;
-  margin:5px 50px;
-  font-family: var(--secundary-font);
-  color: var(--light);
-}
+ 
+ .InfoAlbum {
+   display: flex;
+   justify-content: space-around;
+   margin: 0 auto 10px auto;
+   color: aliceblue;
+   border-color: var(--primary-light);
+   border-bottom-style:solid ;
+   border-bottom-width: 1px;
+ }
 
-.MusicsCards1 img {
-  clip-path: circle(50% at 50% 50%);
-  margin: auto 30px 0 5px;
+.LinkALbun {
+  margin: auto;
+  background-color: aquamarine;
+  padding: 250px;
 }
-
-.MusicsCards1 h4 {
-  margin-top: -5px;
-  font-size: small;
-}
-.aaa {
-  margin: auto 10px;
-}
-
-.aaa img {
-  background-color: var(--light);
-
-}
-
-.InfoAlbum {
-  display: flex;
+.Tittle{
+  width: 400px;
 }
 
 .PlayButton {
-  width: 50px;
+  width: 80px;
+  margin: auto 0;
+  background-color: aliceblue;
+  border-radius: 100%;
+}
+
+.CatError {
+  display: flex;
+  justify-content: space-around;
+  margin: auto 20%;
+}
+
+.CatError p {
+  font-family: var(--secundary-font);
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  color: aliceblue;
+}
+
+.CatError img {
+  max-width: 500px;
+  text-align: center;
 }

@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom/cjs/react-router-dom';
+import Footer from '../../componentes/Footer/Footer.jsx';
 import Header from '../../componentes/Header/Header.jsx';
-import Loading from '../../componentes/Loading';
+import Loading from '../../componentes/Loading/Loading.jsx';
 import MusicCard from '../../componentes/MusicsCards/MusicCards';
 import context from '../../context';
 import getMusics from '../../services/getMusicsAPI';
@@ -10,6 +11,7 @@ import "./Album.css"
 function Album() {
   useEffect(() => {
    music()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
   const { isLoading } = useContext(context);
@@ -50,7 +52,7 @@ function Album() {
             ))}
           </div>
       )}
-
+      <Footer />
     </>
   );
 }
