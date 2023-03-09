@@ -1,7 +1,7 @@
 {
   "name": "music-app",
   "version": "0.1.0",
-  "homepage": "https://robertog13.github.io/App-de-Musica/",
+  "homepage": "App-de-Musica/",
   "private": true,
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
